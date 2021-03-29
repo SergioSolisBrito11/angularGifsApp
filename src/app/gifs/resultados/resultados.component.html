@@ -1,0 +1,25 @@
+<!-- 78. GifsModule y sus componentes -->
+<!-- 84. Mostrar los resultados en pantalla -->
+<!-- 90. Animate.style CSS -->
+
+<!-- <ul>
+    <li *ngFor="let gif of resultados">
+        {{ gif.title }}
+    </li>
+</ul> -->
+
+<div class="row"><!-- INICIO div.row -->
+    <div *ngFor="let gif of resultados" class="col-md-4 col-sm-6 animate__heartBeat"><!-- INICIO div-*ngFor -->
+            <div class="card"><!-- INICIO div.card-->
+                <img [src]="gif.images.downsized_medium.url" 
+                     [alt]="gif.title"
+                     class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">
+                        {{ gif.title }}
+                    </p>
+                </div><!-- FIN div.col-->
+            </div><!-- FIN div.card-->
+    </div><!-- INICIO div-*ngFor -->
+</div><!-- FIN div.row -->
+

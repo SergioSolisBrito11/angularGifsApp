@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* 76. Diseño inicial de nuestra aplicación de Gifs  */
+
+html, body {
+    height: 100%;
+}
+
+#sidebar {
+    height: 100%;
+    min-height: 100vh;
+    min-width: 180px;
+}
